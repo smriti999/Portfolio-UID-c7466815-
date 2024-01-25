@@ -1,20 +1,20 @@
 BPP Pizza Price Calculator 
-
-Description
-This Python script is a simple pizza price calculator for BPP (Best Pizza Place) that takes user input for the number of pizzas ordered, delivery option,
-whether it's Tuesday, and whether the customer used the app. The script calculates the total pizza cost considering pizza price, delivery cost, Tuesday 
-discount, and app discount. It then generates a receipt for the billing system.
+The BPP Pizza Price Calculator is a Python program designed to calculate the total cost of pizza orders, taking into account various factors such as the number of pizzas, delivery preference, discounts, and more. It provides a detailed receipt for the billing system to give users a clear breakdown of the costs involved.
 
 Features
-Input Validation: The script ensures valid input for the number of pizzas, delivery option, Tuesday check, and app usage.
-Cost Calculation: Calculates the total pizza cost based on the number of pizzas, delivery option, Tuesday discount, and app discount.
-Discounts: Applies discounts for Tuesday and app usage.
-Receipt Generation: Generates a detailed receipt for the billing system.
+Input Validation: Ensures that user inputs are validated, prompting users to enter correct and appropriate information.
+Delivery Cost: Calculates and applies the delivery cost based on the user's preference and order quantity.
+Tuesday Discount: Applies a 50% discount on the total pizza cost if the order is placed on a Tuesday.
+App Discount: Applies a 25% discount on the total pizza cost if the customer used the app for the order.
 
 How to Use
-Run the Script:
--Execute the script in a Python environment (Python 3.x recommended).
--The user will be prompted to enter information about the order.
+Run the program by executing the pizza_price_calculator() function.
+Follow the prompts to input the necessary information:
+Number of pizzas ordered.
+Whether delivery is required.
+Whether it is Tuesday.
+Whether the customer used the app.
+The program will calculate the total pizza cost, apply any applicable discounts or additional costs, and display the result.
 
 Input Information:
 -Provide the number of pizzas ordered.
@@ -27,7 +27,7 @@ View Results:
 
 Input Validation
 -For the number of pizzas, the script ensures a positive integer is entered.
--For delivery option, Tuesday check, and app usage, the script validates input for 'y', 'n', 'yes', or 'no'.
+-For delivery option, Tuesday check, and app usage, the script validates input for 'Y', 'N'.
 
 Discounts
 Delivery Discount: 
