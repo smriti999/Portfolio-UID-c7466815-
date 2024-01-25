@@ -20,44 +20,44 @@ def pizza_price_calculator():
 
     # Input validation for delivery option
     while True:
-        delivery_option = input("Is delivery required? (y/n, Y/N, Yes/No) ")
-        if delivery_option.lower() in ['y', 'n', 'yes', 'no']:
+        delivery_option = input("Is delivery required? (Y/N) ")
+        if delivery_option in ['Y', 'N']:
             break
         else:
-            print('Please answer "y" or "n".')
+            print('Please answer"(Y/N)".')
 
     # Input validation for Tuesday check
     while True:
-        is_tuesday = input("Is it Tuesday? (y/n, Y/N, Yes/No) ")
-        if is_tuesday.lower() in ['y', 'n', 'yes', 'no']:
+        is_tuesday = input("Is it Tuesday? (Y/N,) ")
+        if is_tuesday in ['Y', 'N']:
             break
         else:
-            print('Please answer "(y/n, Y/N, Yes/No)".')
+            print('Please answer "(Y/N)".')
 
     # Input validation for app usage
     while True:
-        app_used = input("Did the customer use the app? (y/n, Y/N, Yes/No) ")
-        if app_used.lower() in ['y', 'n', 'yes', 'no']:
+        app_used = input("Did the customer use the app? (Y/N) ")
+        if app_used in ['Y', 'N']:
             break
         else:
-            print('Please answer "y" or "n".')
+            print('Please answer"(Y/N)".')
 
     # Calculate total pizza cost
     total_pizza_cost = num_pizzas * PIZZA_PRICE
 
     # Apply delivery cost
-    if delivery_option.lower() == 'y':
+    if delivery_option == 'Y':
         if num_pizzas >= 5:
             print("Delivery is free for orders with five or more pizzas.")
         else:
             total_pizza_cost += DELIVERY_COST
 
     # Apply Tuesday discount
-    if is_tuesday.lower() == 'y':
+    if is_tuesday == 'Y':
         total_pizza_cost *= 0.5  # 50% discount on Tuesdays
         tuesday=total_pizza_cost
     # Apply app discount
-    if app_used.lower() == 'y':
+    if app_used == 'Y':
         app_discount_amount = total_pizza_cost * APP_DISCOUNT
         total_pizza_cost -= app_discount_amount
 
@@ -70,14 +70,14 @@ def pizza_price_calculator():
     print(f"Pizza Price per Unit:", f"£{PIZZA_PRICE:.2f}".rjust(10))
     print(f"Number of Pizzas: ", f"{num_pizzas}".rjust(8))
 
-    if delivery_option.lower() == 'y' and num_pizzas < 5:
-        print(f"Delivery Cost:", f"£{DELIVERY_COST:.2f}".rjust(18))
+    if delivery_option == 'Y' and num_pizzas < 5:
+        print(f"Delivery Cost:", f"£{DELIVERY_COST:.2f}".rjust(16))
 
-    if is_tuesday.lower() == 'y':
-        print("Tue. Discount Applied:", f"£{tuesday}".rjust(8))
+    if is_tuesday == 'Y':
+        print("Tue. Discount Applied:", f"£{tuesday}".rjust(9))
 
-    if app_used.lower() == 'y':
-        print(f"App Discount Applied:", f"£{app_discount_amount:.2f}".rjust(9),)
+    if app_used == 'Y':
+        print(f"App Discount Applied:", f"£{app_discount_amount:.2f}".rjust(9))
 
     print("\n---------------------------------")
     print(f"Total Cost:", f"£{total_pizza_cost:.2f}".rjust(20))
