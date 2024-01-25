@@ -4,6 +4,7 @@ The BPP Pizza Price Calculator is a Python program designed to calculate the tot
 
 
 
+
 Features
 
 Input Validation: Ensures that user inputs are validated, prompting users to enter correct and appropriate information.
@@ -13,6 +14,7 @@ Delivery Cost: Calculates and applies the delivery cost based on the user's pref
 Tuesday Discount: Applies a 50% discount on the total pizza cost if the order is placed on a Tuesday.
 
 App Discount: Applies a 25% discount on the total pizza cost if the customer used the app for the order.
+
 
 
 How to Use
@@ -32,6 +34,7 @@ Follow the prompts to input the necessary information:
 The program will calculate the total pizza cost, apply any applicable discounts or additional costs, and display the result.
 
 
+
 Input Information:
 
 -Provide the number of pizzas ordered.
@@ -43,9 +46,11 @@ Input Information:
 -Indicate whether the customer used the app.
 
 
+
 View Results:
 
 -The script will display the total price and a detailed receipt.
+
 
 
 Input Validation
@@ -53,6 +58,7 @@ Input Validation
 -For the number of pizzas, the script ensures a positive integer is entered.
 
 -For delivery option, Tuesday check, and app usage, the script validates input for 'Y', 'N'.
+
 
 
 Discounts
@@ -64,6 +70,7 @@ Delivery Discount:
 -Tuesday Discount: 50% discount on total pizza cost if it's Tuesday.
 
 -App Discount: 25% discount on total pizza cost if the app is used.
+
 
 
 Receipt Format
