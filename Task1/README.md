@@ -7,31 +7,31 @@ The BPP Pizza Price Calculator is a Python program designed to calculate the tot
 
 Features
 
-Input Validation: Ensures that user inputs are validated, prompting users to enter correct and appropriate information.
+-Input Validation: Ensures that user inputs are validated, prompting users to enter correct and appropriate information.
 
-Delivery Cost: Calculates and applies the delivery cost based on the user's preference and order quantity.
+-Delivery Cost: Calculates and applies the delivery cost based on the user's preference and order quantity.
 
-Tuesday Discount: Applies a 50% discount on the total pizza cost if the order is placed on a Tuesday.
+-Tuesday Discount: Applies a 50% discount on the total pizza cost if the order is placed on a Tuesday.
 
-App Discount: Applies a 25% discount on the total pizza cost if the customer used the app for the order.
+-App Discount: Applies a 25% discount on the total pizza cost if the customer used the app for the order.
 
 
 
 How to Use
 
-Run the program by executing the pizza_price_calculator() function.
+-Run the program by executing the pizza_price_calculator() function.
 
-Follow the prompts to input the necessary information:
+-Follow the prompts to input the necessary information:
 
--Number of pizzas ordered.
+     -Number of pizzas ordered.
 
--Whether delivery is required.
+     -Whether delivery is required.
 
--Whether it is Tuesday.
+     -Whether it is Tuesday.
 
--Whether the customer used the app.
+     -Whether the customer used the app.
 
-The program will calculate the total pizza cost, apply any applicable discounts or additional costs, and display the result.
+-The program will calculate the total pizza cost, apply any applicable discounts or additional costs, and display the result.
 
 
 
@@ -63,16 +63,17 @@ Input Validation
 
 Discounts
 
-Delivery Discount: 
+-Delivery Discount: 
 
--Free delivery for orders with five or more pizzas.
+     -Free delivery for orders with five or more pizzas.
 
--Tuesday Discount: 50% discount on total pizza cost if it's Tuesday.
+     -Tuesday Discount: 50% discount on total pizza cost if it's Tuesday.
 
--App Discount: 25% discount on total pizza cost if the app is used.
+     -App Discount: 25% discount on total pizza cost if the app is used.
 
 
 
 Receipt Format
+
 -The receipt includes details such as pizza price per unit, number of pizzas, delivery cost (if applicable), Tuesday discount (if applicable), 
 app discount (if applicable), and the total cost.
