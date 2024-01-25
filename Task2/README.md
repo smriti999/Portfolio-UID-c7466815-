@@ -9,20 +9,18 @@ as the total number of visits, the number of intruding cats doused with water, a
 
 Usage
 
-Ensure you have Python installed on your system. The script is executed from the command line and takes a log file path as an argument.
-
+-Ensure you have Python installed on your system. The script is executed from the command line and takes a log file path as an argument.
 python cat_shelter.py <log_file_path>
 
 
 
 Example
 
-python cat_shelter.py shelter_2023-08-25.log
+-python cat_shelter.py shelter_2023-08-25.log
 
 
 
 Log File Format
-
 The log file should adhere to the following format, with each line representing a cat activity:
 
 sql
@@ -62,4 +60,4 @@ The script calculates and displays the following information:
 
 Error Handling
 
-The script provides robust error handling for common issues related to command-line arguments, such as missing arguments or files that cannot be opened.
+-The script provides robust error handling for common issues related to command-line arguments, such as missing arguments or files that cannot be opened.
