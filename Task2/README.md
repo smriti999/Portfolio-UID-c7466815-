@@ -21,7 +21,8 @@ Example
 
 
 Log File Format
-The log file should adhere to the following format, with each line representing a cat activity:
+
+-The log file should adhere to the following format, with each line representing a cat activity:
 
 sql
 
